@@ -1,25 +1,30 @@
+'use strict';
+
 (function(){
+	
+	var string;
+	
 	var fizzBuzz = { 
 		read: function(sml,lrg) {
 			var arr = [];
-			var numb = sml;
 			var outPut;
 
 			do {
-				if (numb % 3 === 0 && numb % 5 === 0) {
+				if (sml % 3 === 0 && sml % 5 === 0) {
 					arr.push('FizzBuzz');
-				} else if (numb % 3 === 0) {
+				} else if (sml % 3 === 0) {
 					arr.push('Fizz');
-				} else if (numb % 5 === 0) {
+				} else if (sml % 5 === 0) {
 					arr.push('Buzz');
 				} else {
-					arr.push(numb);
-				} numb ++;
-			} while (numb <= lrg);
-			outPut = arr.toString();
+					arr.push(sml);
+				} sml ++;
+			} while (sml <= lrg);
+			string = arr.toString();
 			console.log(outPut);
-			document.getElementById("write").innerHTML = outPut;
-			return outPut;
+		},
+		write: function() {
+			document.getElementById("write").innerHTML = string;
 		}
 	};
 
@@ -28,5 +33,6 @@
 		var valueSml = parseInt(document.getElementById('valueSml').value);
 		var valueLrg = parseInt(document.getElementById('valueLrg').value);
 		fizzBuzz.read.call(undefined, valueSml, valueLrg);
+		fizzBuzz.write.call();
 	});
 }());
