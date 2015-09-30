@@ -15,7 +15,7 @@
 				} else {
 					arr.push(numb);
 				} numb ++;
-			} while (numb < lrg);
+			} while (numb <= lrg);
 			outPut = arr.toString();
 			console.log(outPut);
 			document.getElementById("write").innerHTML = outPut;
