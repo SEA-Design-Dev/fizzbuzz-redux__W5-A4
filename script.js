@@ -17,21 +17,16 @@
 				} numb ++;
 			} while (numb < lrg);
 			outPut = arr.toString();
-			return outPut
 			console.log(outPut);
-		},
-		write: function() {
-			document.body.innerHTML = fizzBuzz.string.outPut; 
+			document.getElementById("write").innerHTML = outPut;
+			return outPut;
 		}
 	};
 
 	document.getElementById('submit').addEventListener("click", function(e){
-
 		e.preventDefault();
 		var valueSml = parseInt(document.getElementById('valueSml').value);
 		var valueLrg = parseInt(document.getElementById('valueLrg').value);
 		fizzBuzz.read.call(undefined, valueSml, valueLrg);
-		fizzBuzz.write.call('undefined');
-
-});
+	});
 //}());
