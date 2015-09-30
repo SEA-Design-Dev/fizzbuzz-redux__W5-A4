@@ -1,7 +1,6 @@
 'use strict';
 
 (function(){
-	var outPut;
 	var arr = [];
 	var string;
 	var valueLrg;
