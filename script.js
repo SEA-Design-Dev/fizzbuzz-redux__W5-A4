@@ -28,6 +28,7 @@
 		write: function() {
 			string = arr.toString();
 			document.getElementById("write").innerHTML = string;
+			arr = [];
 		}
 	};
 
