@@ -1,4 +1,4 @@
-//(function(){
+(function(){
 	var fizzBuzz = { 
 		read: function(sml,lrg) {
 			var arr = [];
@@ -29,4 +29,4 @@
 		var valueLrg = parseInt(document.getElementById('valueLrg').value);
 		fizzBuzz.read.call(undefined, valueSml, valueLrg);
 	});
-//}());
+}());
