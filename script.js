@@ -1,44 +1,45 @@
 'use strict';
 
-(function(){
+//(function(){
 	var FizzBuz = (function(){
+
+		var fizzBuzz = function () {};
 		var arr = [];
-		var string;
+		var str;
 		var valueLrg;
 		var valueSml;
 
-		var fizzBuzz = {
+		fizzBuzz.prototype = {
 			read: function() {
 				valueSml = parseInt(document.getElementById('valueSml').value);
 				valueLrg = parseInt(document.getElementById('valueLrg').value);
 			},
-			calculate: function(sml,lrg) {
+			calculate: function() {
 				do {
-					if (sml % 3 === 0 && sml % 5 === 0) {
+					if (valueSml % 3 === 0 && valueSml % 5 === 0) {
 						arr.push('FizzBuzz');
-					} else if (sml % 3 === 0) {
+					} else if (valueSml % 3 === 0) {
 						arr.push('Fizz');
-					} else if (sml % 5 === 0) {
+					} else if (valueSml % 5 === 0) {
 						arr.push('Buzz');
 					} else {
-						arr.push(sml);
-					} sml ++;
-				} while (sml <= lrg);
+						arr.push(valueSml);
+					} valueSml ++;
+				} while (valueSml <= valueLrg);
 			},
 			write: function() {
-				string = arr.toString();
-				document.getElementById("write").innerHTML = string;
-				arr = [];
+				str = arr.toString();
+				document.getElementById("write").innerHTML = str;
 			}
-		}
-		
+		};
 		return fizzBuzz;
 	}());
 
 	document.getElementById('submit').addEventListener("click", function(e){
 		e.preventDefault();
-		fizzBuzz.read.call();
-		fizzBuzz.calculate.call(undefined, valueSml, valueLrg);
-		fizzBuzz.write.call();
+		var fb = new FizzBuz();
+		fb.read();
+		fb.calculate();
+		fb.write();
 	});
-}());
+//}());
