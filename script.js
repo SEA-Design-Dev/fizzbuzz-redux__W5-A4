@@ -1,7 +1,8 @@
 'use strict';
 
 (function(){
-	
+	var outPut;
+	var arr = [];
 	var string;
 	var valueLrg;
 	var valueSml;
@@ -12,9 +13,6 @@
 			valueLrg = parseInt(document.getElementById('valueLrg').value);
 		},
 		calculate: function(sml,lrg) {
-			var arr = [];
-			var outPut;
-
 			do {
 				if (sml % 3 === 0 && sml % 5 === 0) {
 					arr.push('FizzBuzz');
@@ -26,9 +24,9 @@
 					arr.push(sml);
 				} sml ++;
 			} while (sml <= lrg);
-			string = arr.toString();
 		},
 		write: function() {
+			string = arr.toString();
 			document.getElementById("write").innerHTML = string;
 		}
 	};
