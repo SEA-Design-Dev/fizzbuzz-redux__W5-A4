@@ -3,9 +3,15 @@
 (function(){
 	
 	var string;
+	var valueLrg;
+	var valueSml;
 	
-	var fizzBuzz = { 
-		read: function(sml,lrg) {
+	var fizzBuzz = {
+		read: function() {
+			valueSml = parseInt(document.getElementById('valueSml').value);
+			valueLrg = parseInt(document.getElementById('valueLrg').value);
+		},
+		calculate: function(sml,lrg) {
 			var arr = [];
 			var outPut;
 
@@ -21,7 +27,6 @@
 				} sml ++;
 			} while (sml <= lrg);
 			string = arr.toString();
-			console.log(outPut);
 		},
 		write: function() {
 			document.getElementById("write").innerHTML = string;
@@ -30,9 +35,8 @@
 
 	document.getElementById('submit').addEventListener("click", function(e){
 		e.preventDefault();
-		var valueSml = parseInt(document.getElementById('valueSml').value);
-		var valueLrg = parseInt(document.getElementById('valueLrg').value);
-		fizzBuzz.read.call(undefined, valueSml, valueLrg);
+		fizzBuzz.read.call();
+		fizzBuzz.calculate.call(undefined, valueSml, valueLrg);
 		fizzBuzz.write.call();
 	});
 }());
