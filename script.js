@@ -1,6 +1,6 @@
 'use strict';
 
-//(function(){
+(function(){
 	var FizzBuz = (function(){
 
 		var fizzBuzz = function () {};
@@ -29,7 +29,7 @@
 			},
 			write: function() {
 				str = arr.toString();
-				document.getElementById("write").innerHTML = str;
+				return str;
 			}
 		};
 		return fizzBuzz;
@@ -39,7 +39,7 @@
 		e.preventDefault();
 		var fb = new FizzBuz();
 		fb.read();
-		fb.calculate();
-		fb.write();
+		fb.calculate();		
+		document.getElementById("write").innerHTML = fb.write();
 	});
-//}());
+}());
