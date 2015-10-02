@@ -1,8 +1,8 @@
 var fizzbuzz = (function() {
   var _fizzBuzz = function(fizz, buzz) {
-    this.fizzbuzz = fizz + buzz;
-    this.fizz = fizz;
-    this.buzz = buzz;
+    this.fizzbuzz = fizz + buzz || "fizzbuzz";
+    this.fizz = fizz || "fizz";
+    this.buzz = buzz || "buzz";
     this.nums = [];
   };
 

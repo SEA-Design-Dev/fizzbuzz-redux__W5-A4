@@ -1,6 +1,6 @@
 {
   "name": "sea-d44-fizz-buzz-ch",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Demonstrates publishing a node module",
   "main": "index.js",
   "scripts": {
