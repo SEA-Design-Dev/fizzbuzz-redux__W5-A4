@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "description": "fizz buzz deployment for sea-d44 class",
   "main": "index.js",
+  "files": [
+    "README.md",
+    "index.js",
+    "lib/"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
