@@ -1,4 +1,4 @@
-function FizzBuzz(word1, word2) {
+var FizzBuzz = function(word1, word2) {
 
 	this.word1 = word1;
 	this.word2 = word2;
@@ -40,6 +40,4 @@ function FizzBuzz(word1, word2) {
 	};	
 }
 
-exports.FizzBuzz = function(word1, word2) {
-  return new FizzBuzz(word1, word2);
-}
+module.exports = FizzBuzz;
