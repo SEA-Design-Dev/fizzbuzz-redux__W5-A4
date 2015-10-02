@@ -39,3 +39,7 @@ function FizzBuzz(word1, word2) {
 		return words;
 	};	
 }
+
+exports.FizzBuzz = function(word1, word2) {
+  return new FizzBuzz(word1, word2);
+}
