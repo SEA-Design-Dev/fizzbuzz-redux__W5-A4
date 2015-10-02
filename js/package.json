@@ -1,0 +1,22 @@
+{
+  "name": "sea-d44-fizz-buzz-ps",
+  "version": "0.0.1",
+  "description": "Create a new FizzBuzz constructor that accepts two strings as arguments. Input accepts two numbers used to create the array of values. Output method produces the array.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pstrum/fizzbuzz-redux__W5-A4.git"
+  },
+  "keywords": [
+    "sea-d44"
+  ],
+  "author": "Peter Strumolo <pstrum@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pstrum/fizzbuzz-redux__W5-A4/issues"
+  },
+  "homepage": "https://github.com/pstrum/fizzbuzz-redux__W5-A4#readme"
+}
