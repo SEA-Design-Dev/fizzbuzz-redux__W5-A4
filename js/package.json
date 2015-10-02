@@ -1,6 +1,6 @@
 {
   "name": "sea-d44-fizz-buzz-ps",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Generates a FizzBuzz array of values.",
   "main": "index.js",
   "scripts": {
@@ -16,7 +16,7 @@
   "author": "Peter Strumolo <pstrum@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/pstrum/fizzbuzz-redux__W5-A4/issues"
+    "url": "https://github.com/SEA-Design-Dev/fizzbuzz-redux__W5-A4"
   },
-  "homepage": "https://github.com/pstrum/fizzbuzz-redux__W5-A4#readme"
+  "homepage": "https://github.com/SEA-Design-Dev/fizzbuzz-redux__W5-A4#readme"
 }
