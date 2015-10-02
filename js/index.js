@@ -7,18 +7,14 @@ var FizzBuzz = (function () {
     this.wordTwo = y || "Buzz";
   };
 
-  var makeArray = function (min, max, fizz, buzz, array) {
-    for (var i = min; i <= max; i++) {
-        array.push(i % 15 === 0 ? fizz + buzz : i % 3 === 0 ? fizz : i % 5 === 0 ? buzz : i);
-      }
-    return array;
-  };
-
   _fizzBuzz.prototype = {
 
     input: function (min, max) {
       this.fizzArray = [];
-      makeArray(min, max, this.wordOne, this.wordTwo, this.fizzArray);
+      for (var i = min; i <= max; i++) {
+        this.fizzArray.push(i % 15 === 0 ? this.wordOne + this.wordTwo : i % 3 === 0 ? this.wordOne : i % 5 === 0 ? this.wordTwo : i);
+      }
+      return this.fizzArray;
     },
 
     output: function () {
