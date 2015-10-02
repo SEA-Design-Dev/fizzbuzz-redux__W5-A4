@@ -1,0 +1,22 @@
+{
+  "name": "sea-d44-fizz-buzz-zg",
+  "version": "1.0.3",
+  "description": "First attempt at making a node module library to be published.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ZachKGordon/fizzbuzz-redux__W5-A4.git"
+  },
+  "keywords": [
+    "sea-d44"
+  ],
+  "author": "Zach Gordon <z.gordon.h@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZachKGordon/fizzbuzz-redux__W5-A4/issues"
+  },
+  "homepage": "https://github.com/ZachKGordon/fizzbuzz-redux__W5-A4"
+}
