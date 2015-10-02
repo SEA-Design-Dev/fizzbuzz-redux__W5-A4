@@ -1,0 +1,22 @@
+{
+  "name": "sea-d44-fizz-buzz-mk",
+  "version": "0.1.0",
+  "description": "Demo of how to publish an npm module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mollyfish/fizzbuzz-redux__W5-A4.git"
+  },
+  "keywords": [
+    "sea-d44"
+  ],
+  "author": "Molly Kent <kent.molly@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mollyfish/fizzbuzz-redux__W5-A4/issues"
+  },
+  "homepage": "https://github.com/mollyfish/fizzbuzz-redux__W5-A4#readme"
+}

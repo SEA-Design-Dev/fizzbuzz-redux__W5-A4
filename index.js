@@ -26,45 +26,19 @@ module.exports = (function() {
     return resultArr; 
   };
   
-  _FizzBuzz.prototype.input = function(start,stop) {
-    // called in the event listener, 
-    // given the values entered in the form as start and stop
-    this.start = start;
-    this.stop = stop + 1;
+  _FizzBuzz.prototype.input = function(min,max) {
+    this.min = min;
+    this.max = max + 1;
     // pass values into doFizzBuzz
-    this.result = doFizzBuzz(start,stop,this.word1,this.word2);
+    this.result = doFizzBuzz(min,max,this.word1,this.word2);
     // error checking
-    if (start >= stop) {
+    if (min >= max) {
       alert('Your stop value must be larger than your start value.');
     }
   };
   
-  // call OUTPUT in the event listener, give destination DOM object in the call
-  _FizzBuzz.prototype.output = function(destination) {
-    this.destination = destination;
-    // removes existing DOM nodes from inside the <div>
-    while (this.destination.firstChild) {
-      this.destination.removeChild(this.destination.firstChild);
-    }
-    // the IF part of this is to keep it from printing if the start
-    // value is greater than the stop value
-    if (this.start < this.stop) {
-      // append heading and empty <ul>
-      var heading = document.createElement('h2');
-      heading.appendChild(document.createTextNode('Your ' + this.word1 + this.word2 + ' from ' + this.start + ' to ' + (this.stop - 1) + ':'));
-      this.destination.appendChild(heading);
-      var newList = document.createElement('ul');
-      this.destination.appendChild(newList);
-    }
-    // append an <li> for each result in the array
-    for (var i = 0; i < this.result.length; i++) {
-      var resultItem = document.createElement('li');
-      resultItem.appendChild(document.createTextNode(this.result[i]));
-      newList.appendChild(resultItem);
-    }
-    // empty the results array in preparation for the next entry
-    this.result = [];
+  _FizzBuzz.prototype.output = function() { 
+    return this.result;
   };
-  // must return _FizzBuzz so it can be heard outside the IFFY
   return _FizzBuzz; 
 })();
