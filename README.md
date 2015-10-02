@@ -1,22 +1,22 @@
-# fizzbuzz-redux__W5-A4
+# Alina's FizzBuzz Calculator
+### Code Fellows Front-End DA Assignment: fizzbuzz-redux__W5-A4
 
-Tonight's assignment: refactor your FizzBuzz into a library and publish it to the npm registry.
+FizzBuzz object with input and output methods. FizzBuzz object can accept two new strings as arguments to replace the words "Fizz" and "Buzz". The input method accepts two arguments of "min" and "max" for the range to be calculated. The output method returns an array.
 
-You will first refactor the object to have an `input` and an `output` method, instead of the "read" and "write" methods.
+GitHub: [Alina's FizzBuzz Calculator](https://github.com/toalina/fizzbuzz-redux__W5-A4)
 
-Just like last night's homework, your constructor should accept arguments that change the strings "Fizz" and "Buzz" (e.g. `new FizzBuzz('Bleep', 'Blorp')`). The `input` method should accept two arguments, `min` and `max`—you may safely assume they are `Numbers`. `output` does not take any arguments, but _must_ return an array.
+npm module: [Alina's FizzBuzz Calculator](https://www.npmjs.com/package/sea-d44-fizz-buzz-at) is published to the npm registry. Module exposes a function using the CommonJS "module.exports" construct.
 
-Your module should expose a function using the CommonJS `module.exports` construct. I should be able to `npm install <your-module>` and use it like so:
+Download by: ``` npm install sea-d44-fizz-buzz-at ```
+
+To use: (Example)
 
 ```
-var FizzBuzz = require('<your-module>');
+var FizzBuzz = require('sea-d44-fizz-buzz-at');
 
 var buzzer = new FizzBuzz(); // Should accept string arguments that replace 'Fizz' and 'Buzz'
 buzzer.input(1, 120);
 
 console.log(buzzer.output());
 ```
-
-Name your module `sea-d44-fizz-buzz-<your initials>` and publish it to the npm registry. And, as usual, fork this repo and submit a PR.
-
 

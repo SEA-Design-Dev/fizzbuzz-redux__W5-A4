@@ -1,0 +1,22 @@
+{
+  "name": "sea-d44-fizz-buzz-at",
+  "version": "1.1.0",
+  "description": "FizzBuzz calculator for Code Fellows DA assignment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/toalina/fizzbuzz-redux__W5-A4.git"
+  },
+  "keywords": [
+    "sea-d44"
+  ],
+  "author": "Alina To <alina.to@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/toalina/fizzbuzz-redux__W5-A4/issues"
+  },
+  "homepage": "https://github.com/toalina/fizzbuzz-redux__W5-A4#readme"
+}
