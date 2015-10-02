@@ -1,14 +1,20 @@
-# FizzBuzz Week 5 Assignment 3
+# fizzbuzz-redux__W5-A4
 
-## Scenario and Requirements
+Tonight's assignment: refactor your FizzBuzz into a library and publish it to the npm registry.
 
-Tonight you will refactor [last night's homework](https://github.com/SEA-Design-Dev/fizzbuzz-redux__W5-A2).
+You will first refactor the object to have an `input` and an `output` method, instead of the "read" and "write" methods.
 
-You must extract FizzBuzz in to its own file (so you now have two separate files), then load both files in the HTML, and from the second (non-FizzBuzz file) invoke the FizzBuzz object and create the output for your DOM. Additionally, your writing method should take a DOM node where the output is to be written.
+Just like last night's homework, your constructor should accept arguments that change the strings "Fizz" and "Buzz" (e.g. `new FizzBuzz('Bleep', 'Blorp')`). The `input` method should accept two arguments, `min` and `max`—you may safely assume they are `Numbers`. `output` does not take any arguments, but _must_ return an array.
 
-Additionally your constructor function should accept arguments that let you change the strings of "fizz" and "buzz" (e.g. `new FizzBuzz('bleep', 'blorp')`).
+Your module should expose a function using the CommonJS `module.exports` construct. I should be able to `npm install <your-module>` and use it like so:
 
+```
+var FizzBuzz = require('<your-module>');
 
-## Turning your assginment in
+var buzzer = new FizzBuzz(); // Should accept string arguments that replace 'Fizz' and 'Buzz'
+buzzer.input(1, 120);
 
-Please fork this repository and create a pull request back to it. Once the request has been made, please post a link to it in Canvas.
+console.log(buzzer.output());
+```
+
+Name your module `sea-d44-fizz-buzz-<your initials>` and publish it to the npm registry. And, as usual, fork this repo and submit a PR.
