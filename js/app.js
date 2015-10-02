@@ -5,11 +5,11 @@
   button.addEventListener("click", function (e) {
     e.preventDefault();
 
-    var startVal = parseInt(document.getElementById("first-value").value);
-    var endVal = parseInt(document.getElementById("second-value").value);
+    var min = parseInt(document.getElementById("first-value").value);
+    var max = parseInt(document.getElementById("second-value").value);
     var fizzBuzzList = document.getElementById("fizz-list");
 
-    myFizzy.getValues(startVal, endVal);
+    myFizzy.input(min, max);
 
     if (!document.getElementById("check-box").checked) { // If the check-box is checked,
       while (fizzBuzzList.hasChildNodes()) { // Remove all child nodes from elementID
@@ -17,12 +17,12 @@
       }
     }
 
-    if (isNaN(startVal) || isNaN(endVal)) { // Throw up an alert if there isn't one or both values
+    if (isNaN(min) || isNaN(max)) { // Throw up an alert if there isn't one or both values
       alert("Please enter a number");
-    } else if (startVal >= endVal) {
+    } else if (min >= max) {
       alert("First value must be less than the second");
     } else {
-      myFizzy.writeValues(fizzBuzzList);
+      myFizzy.output(fizzBuzzList);
     }
   });
 })();
