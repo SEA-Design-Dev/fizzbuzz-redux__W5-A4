@@ -18,7 +18,9 @@ function FizzBuzz(word1, word2) {
 	};
 	
 	this.output = function() {
+		
 		var words = [];
+		
 		for (var i = this.begin; i < (this.end + 1); i++) {
 		
 			if (i%3 === 0 && i%5 !== 0) {
@@ -37,10 +39,3 @@ function FizzBuzz(word1, word2) {
 		return words;
 	};	
 }
-
-//var FizzBuzz = require('<your-module>');
-
-var buzzer = new FizzBuzz(); // Should accept string arguments that replace 'Fizz' and 'Buzz'
-buzzer.input(1, 120);
-
-console.log(buzzer.output());
