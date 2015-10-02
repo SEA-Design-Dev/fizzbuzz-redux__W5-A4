@@ -1,4 +1,4 @@
-var FizzBuzz = (function() {
+var fizzbuzz = (function() {
   var _fizzBuzz = function(fizz, buzz) {
     this.fizzbuzz = fizz + buzz;
     this.fizz = fizz;
@@ -11,7 +11,6 @@ var FizzBuzz = (function() {
 
       this.low = low;
       this.high = high;
-
 
       this.nums.push(low);
       this.nums.push(high);
@@ -45,8 +44,4 @@ var FizzBuzz = (function() {
   return _fizzBuzz;
 }());
 
-
-var buzzer = new FizzBuzz("blip", "blorp");
-buzzer.input(1, 125);
-
-console.log(buzzer.output());
+module.exports = fizzbuzz;
