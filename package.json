@@ -1,6 +1,6 @@
 {
   "name": "sea-d44-fizz-buzz-ls",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "sea d44 week 5 assignment 4",
   "main": "index.js",
   "scripts": {
