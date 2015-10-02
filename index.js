@@ -1,2 +1,1 @@
-var app = require('.lib/app.js');
-
+var Fizzbuzz = require('./lib/app.js');
