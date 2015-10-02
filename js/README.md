@@ -1,0 +1,1 @@
+Package allows you to create a new constructor that accepts two strings. The input method accepts two numbers and the output produces a classic FizzBuzz array of values. Ex. [1, 2, Fizz, 4, Buzz, ...].
