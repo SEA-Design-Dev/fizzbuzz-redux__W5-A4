@@ -2,6 +2,8 @@
 
 (function() {
 
+  var _generateOutput = require("./generator.js");
+
   var _stringsArray = [];
   var _outputArray;
 
