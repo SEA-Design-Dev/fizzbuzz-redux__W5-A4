@@ -1,3 +1,3 @@
-var Fizzbuzz = require('./lib/fizz-buzz.js');
+var FizzBuzz = require('./lib/fizz-buzz.js');
 
 module.exports = FizzBuzz;
