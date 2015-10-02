@@ -7,7 +7,7 @@
 		var str;
 		var valueLrg;
 		var valueSml;
-		var wordOne
+		var wordOne;
 		var wordTwo;
 
 		fizzBuzz.prototype = {
