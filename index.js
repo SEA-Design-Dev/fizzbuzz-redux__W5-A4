@@ -21,7 +21,7 @@ var FizzBuzz = (function () {
         }
       }
       return this.result;
-      },
+    },
     output: function(){
       return this.result;
     }
