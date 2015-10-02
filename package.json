@@ -1,0 +1,22 @@
+{
+  "name": "sea-d44-fizz-buzz-mb",
+  "version": "1.0.0",
+  "description": "fizz buzz deployment for sea-d44 class",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mbuchthal/fizzbuzz-redux__W5-A4.git"
+  },
+  "keywords": [
+    "sea-d44"
+  ],
+  "author": "Mark Buchthal <mark.buchthal@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mbuchthal/fizzbuzz-redux__W5-A4/issues"
+  },
+  "homepage": "https://github.com/mbuchthal/fizzbuzz-redux__W5-A4#readme"
+}
