@@ -14,6 +14,13 @@ var FizzBuzz = function(word1, word2) {
 	this.input = function(num1, num2) {
 		this.begin = num1; 
 		this.end = num2;
+
+		if (num1 === undefined) {
+			this.begin = 1;
+		}
+		if (num2 === undefined) {
+			this.end = 10;
+		}
 	};
 	
 	this.output = function() {
