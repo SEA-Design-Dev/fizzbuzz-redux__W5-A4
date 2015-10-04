@@ -1,6 +1,6 @@
 {
   "name": "sea-d44-fizz-buzz-sk",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "description": "FizzBuzz Module",
   "main": "index.js",
   "scripts": {
