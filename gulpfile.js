@@ -5,7 +5,7 @@ var FizzBuzz = require('sea-d44-fizz-buzz-bf-2');
 // Basic usage 
 gulp.task('run', function() {
 	// Single entry point to browserify 
-	gulp.src('index.js')
+	gulp.src('node_modules/sea-d44-fizz-buzz-bf-2/index.js')
 		.pipe(browserify({
 		insertGlobals : true,
 		debug : !gulp.env.production
