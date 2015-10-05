@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/brain11f/fizzbuzz-redux__W5-A3/issues"
   },
-  "homepage": "https://github.com/brain11f/fizzbuzz-redux__W5-A3#readme"
+  "homepage": "https://github.com/brain11f/fizzbuzz-redux__W5-A3#readme",
+  "devDependencies": {
+    "gulp-browserify": "^0.5.1"
+  }
 }
