@@ -1,0 +1,26 @@
+{
+  "name": "js-module",
+  "version": "1.0.1",
+  "description": "## Scenario and Requirements",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brain11f/fizzbuzz-redux__W5-A3.git"
+  },
+  "keywords": [
+    "sea-d44"
+  ],
+  "author": "brian finck",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brain11f/fizzbuzz-redux__W5-A3/issues"
+  },
+  "homepage": "https://github.com/brain11f/fizzbuzz-redux__W5-A3#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-browserify": "^0.5.1"
+  }
+}

@@ -18,5 +18,3 @@ console.log(buzzer.output());
 ```
 
 Name your module `sea-d44-fizz-buzz-<your initials>` and publish it to the npm registry. And, as usual, fork this repo and submit a PR.
-
-
