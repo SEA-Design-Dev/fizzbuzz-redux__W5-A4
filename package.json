@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/brain11f/fizzbuzz-redux__W5-A3#readme",
   "devDependencies": {
+    "gulp": "^3.9.0",
     "gulp-browserify": "^0.5.1"
   }
 }
