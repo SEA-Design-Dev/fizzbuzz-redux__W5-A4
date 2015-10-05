@@ -1,3 +1,5 @@
+var FizzBuzz = require('./lib/fizz-buzz.js');
+
 (function(){
 	var FizzBuzz = require('build/js/fizz-buzz.js');
 	document.getElementById('submit').addEventListener("click", function(e){
