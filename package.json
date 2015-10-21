@@ -1,0 +1,19 @@
+{
+  "name": "sea-d44-fizz-buzz-bg",
+  "version": "1.0.1",
+  "description": "publish npm module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bentongreen/fizzbuzz-redux__W5-A4.git"
+  },
+  "author": "Benton Green",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bentongreen/fizzbuzz-redux__W5-A4/issues"
+  },
+  "homepage": "https://github.com/bentongreen/fizzbuzz-redux__W5-A4"
+}
